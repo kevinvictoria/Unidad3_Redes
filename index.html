@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3.1Introducción a redes WAN</title>
-    <!-- Reconoscidos -->
-    <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="/css/fonts.css">
+    <!-- Reconocidos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Sniglet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
@@ -32,6 +28,7 @@
                 <li><a href="#Subtema4">3.4 Tecnologías WAN</a></li>
                 <li><a href="#Subtema5">3.5 Configuración de dispositivos WAN</a></li>
                 <li><a href="#Subtema6">3.6 Niveles de seguridad en redes VPN</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#miModal">Material Extra</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +36,7 @@
     <a name="Subtema1"></a>
     <section class="section1">
         <h2>3.1 Introducción a redes WAN</h2>
-        <img src="/img/wan.jpg" alt="img_tema_3.1">
+        <a href="#"><img src="/img/wan.jpg" alt="img_tema_3.1"></a>
         <p>Se denomina Red WAN (Siglas en inglés: Wide Area Network, Red de Área Amplia) a las conexiones informáticas que consisten en varias redes locales unidas, aunque sus miembros no estén en una misma ubicación física.</p>
         <p>
             Las redes de área extensa (WAN, Wide Area Networks) son infraestructuras de red que abarcan un área geográfica extensa, por ejemplo, entre ciudades, estados, provincias, países o continentes.
@@ -377,7 +374,53 @@
             y cifrado.
         </p>
     </section>
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h1 class="modal-title" id="myModalLabel">Extras</h1>
+                </div>
+                <div class="modal-body">
+                    <section>
+                        <!-- video1 -->
+                        <h3>3.1 Introducción a redes WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/y4zu2FnW6pc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video2 -->
+                        <h3>3.2 Enlaces</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/vWxzs6nqSwI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video3 -->
+                        <h3>3.3 Topologías WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/Y2L_7ewQteI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video4 -->
+                        <h3>3.4 Tecnologías WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/D_jKvsmTECc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video5 -->
+                        <h3>3.5 Configuración de dispositivos WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/mt-WILrtasc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video6 -->
+                        <h3>3.6 Niveles de seguridad en redes VPN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/IzxC6UPilqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
 </body>
