@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1Introducción a redes WAN</title>
+    <!-- Reconocidos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Source+Sans+Pro:wght@200&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Sniglet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <a href="#"><img src="/icons/menu.png" alt="" width="40px" height="40px"></a>
+            <h1>UNIDAD 3 TECNOLOGÍAS WAN</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Subtema1">3.1 Introducción a redes WAN</a></li>
+                <li><a href="#Subtema2">3.2 Enlaces</a></li>
+                <li><a href="#Subtema3">3.3 Topologías WAN</a></li>
+                <li><a href="#Subtema4">3.4 Tecnologías WAN</a></li>
+                <li><a href="#Subtema5">3.5 Configuración de dispositivos WAN</a></li>
+                <li><a href="#Subtema6">3.6 Niveles de seguridad en redes VPN</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#miModal">Material Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 3.1 -->
+    <a name="Subtema1"></a>
+    <section class="section1">
+        <h2>3.1 Introducción a redes WAN</h2>
+        <a href="#"><img src="/img/wan.jpg" alt="img_tema_3.1"></a>
+        <p>Se denomina Red WAN (Siglas en inglés: Wide Area Network, Red de Área Amplia) a las conexiones informáticas que consisten en varias redes locales unidas, aunque sus miembros no estén en una misma ubicación física.</p>
+        <p>
+            Las redes de área extensa (WAN, Wide Area Networks) son infraestructuras de red que abarcan un área geográfica extensa, por ejemplo, entre ciudades, estados, provincias, países o continentes.
+        </p>
+        <p>
+            Normalmente, un WAN consiste en dos o más redes de área local LAN. Una red del tipo WAN es similar en funcionamiento como en características las redes de área local solo que en mayor escala y con mayores características.
+        </p>
+        <p>Su funcionamiento consta de poder intercomunicar gran cantidad de ordenadores con otros mediante algún medio de trasmisión, por lo general cableado o fibra óptica, para poder comunicarse con alguna otra central varios cientos de kilómetros. </p>
+        <p>Las redes WAN incorporan diversas redes de menor tamaño en una sola, interconectando así usuarios separados por enormes distancias, con mayores tasas de transmisión y con diversos niveles de datos.</p>
+        <p>Esto implica la necesidad de máquinas dedicadas por completo a la ejecución de programas de usuario (hosts), la presencia de aparatos enrutadores y conmutadores, o la utilización de máscaras de subred para conectar varios hosts.</p>
+        <p> Algunas empresas cuentan con grandes redes WAN que forman parte de una red privada, encargada de controlar e intercambiar una gran cantidad de datos e información necesaria para el negocio o institución. Por ejemplo puede ser usada en compañías,
+            escuelas organizaciones gubernamentales, que tengan sedes, sucursales o dependencias en distintos sectores geográficos.</p>
+        <p> También existen empresas proveedoras de servicios de Internet (ISP), que representan una de las formas más comunes de emplear este tipo de red ya que ofrece cubrir y recorrer grandes distancias así como para soportar gran cantidad de tráfico de
+            datos e información.</p>
+    </section>
+    <!-- <hr> -->
+    <!-- 3.2 -->
+    <a name="Subtema2"></a>
+    <section>
+        <h2>3.2 Enlaces: dedicados y públicos</h2>
+        <artitle>
+            <h3>Enlace dedicado</h3>
+            <img src="/img/enlaceDedicado3.jpg" alt="img_enlaceDedicado">
+            <p>
+                El Enlace Dedicado es un tipo de conexión a Internet que permite estar conectado permanentemente, es decir, las 24 horas del día, los 365 días del año, que a diferencia del Internet de Banda Ancha, no requiere el uso de una línea telefónica y no se comparte
+                con otros usuarios: la conexión es directa y exclusiva entre cliente y el proveedor.
+            </p>
+            <p>
+                Se utiliza para proporcionar rutas de comunicación WAN a través de la red del proveedor hasta un destino remoto. Se alquilan a una operadora. En general el precio depende del ancho de banda requerido y la distancia entre los puntos de conexión. Las líneas
+                dedicadas reducen el tiempo de latencia y aumental la disponibilidad para aplicaciones como VoIP. Las conexiones requieren un puerto serial de router, un CSI/DSU y el circuito físico del proveedor de servicios. Se utilizan en la construcción
+                de redes WAN.
+            </p>
+            <p>
+                Esta conexión no necesita encenderse al quererla utilizar, ni apagarla al dejarla de usar, se trata de un vínculo permanente de alta calidad y confiabilidad, con velocidades de subida y bajada simétricas y mucho más estables.
+            </p>
+            <p>
+                Para muchos negocios que dependen de una conexión estable para sus labores, el que se presente una falla en la red por varios minutos o incluso horas, puede traer resultados desastrosos, para ello, el Enlace Dedicado cuenta con acuerdos de Niveles de
+                Servicio que garantizan la disponibilidad casi en su totalidad de tiempo de conexión.
+            </p>
+            <p>
+                Otra de sus grandes ventajas es que puedes asignar direcciones IP fijas sin límite, lo que permite poder instalar un sin número de herramientas y aplicaciones adecuadas exclusivamente para las necesidades de institución, empresa o casa, además de que
+                será más fácil monitorear las velocidades de conexión o cualquier imprevisto que pueda presentarse.
+            </p>
+        </artitle>
+        <artitle>
+            <h3>Enlace publico</h3>
+            <img src="/img/enlacePublico.jpg" alt="img_enlacePublico">
+            <p>
+                Las conexiones públicas utilizan la infraestructura global de Internet.
+            </p>
+            <p>
+                Los enlaces de conexión WAN a través de Internet se establecen a través de servicios de banda ancha, por ejemplo DSL, módem por cable y acceso inalámbrico de banda ancha, y en combinación con la tecnología VPN para proporcionar privacidad a través de
+                Internet.
+            </p>
+            <p>
+                El proveedor de servicios puede ofrecer acceso a Internet de banda ancha mediante una línea de suscriptor digital (DSL), cable y acceso satelital.
+            </p>
+            <p>
+                Las opciones de conexión de banda ancha normalmente se usan para conectar oficinas pequeñas y trabajadores a distancia a un sitio corporativo a través de Internet.
+            </p>
+            <p>
+                Los datos que se transmiten entre sitios corporativos a través de la infraestructura WAN pública se deben proteger mediante VPN.
+            </p>
+        </artitle>
+    </section>
+    <!-- <hr> -->
+    <!-- 3.3 -->
+    <a name="Subtema3"></a>
+    <section>
+        <h2>3.3 Topologías WAN</h2>
+        <article>
+            <h3>Punto a punto</h3>
+            <img src="/img/punto_a_punto.jpg" alt="img_puntoapunto">
+            <p>
+                Cada nodo se conecta a otro a través de circuitos dedicados, es decir, canales que son arrendados por empresas o instituciones a las compañías telefónicas. Dichos canales están siempre disponibles para la comunicación entre los dos puntos. Esta configuración
+                es solo funcional para pequeñas WANs ya que todos los nodos deben participar en el tráfico, es decir que si aumenta la cantidad de nodos aumenta la cantidad de tráfico y esto con el consiguiente encarecimiento de la red.
+            </p>
+        </article>
+        <artitle>
+            <h3>Anillo</h3>
+            <img src="/img/anillo2.jpg" alt="img_anillo">
+            <p>
+                Cada nodo es conectado a otros dos más formando un patrón de anillo.
+            </p>
+            <p>
+                Esta topología tiene dos ventajas: por un lado si existe algún problema en las conexiones en un cable, la información le sigue llegando al nodo usando otro recorrido y si algún nodo está muy ocupado el tráfico se puede derivar hacia otros nodos.
+            </p>
+            <p>
+                Extender este tipo de redes es más caro que extender una red punto-a-punto ya que se necesita al menos un enlace más.
+            </p>
+        </artitle>
+        <artitle>
+            <h3>Estrella</h3>
+            <img src="/img/estrella.jpg" alt="img_estrella">
+            <p>
+                En esta configuración un nodo actúa como punto central de conexión para todos los demás, permitiendo así que en caso de que exista un fallo en alguno de los cables los demás nodos no pierdan conexión con el nodo central.
+            </p>
+            <p>
+                La principal desventaja de esta topología es que algún problema que exista en el nodo central se convierte en un desastre total para la red ya que se pierde la conexión de todos los nodos.
+            </p>
+        </artitle>
+        <artitle>
+            <h3>Malla</h3>
+            <img src="/img/malla.jpg" alt="img_malla">
+            <p>
+                En esta topología la esencia es buscar la interconexión de los nodos de tal manera que si uno falla los demás puedan redireccionar los datos rápida y fácilmente.
+            </p>
+            <p>
+                Esta topología es la que más tolerancia tiene a los fallos porque es la que provee más caminos por donde puedan viajar los datos que van de un punto a otro.
+            </p>
+            <P>
+                La principal desventaja de las redes tipo malla es su costo, es por esto que se ha creado una alternativa que es la red de malla parcial en la cual los nodos más críticos se interconectan entre ellos y los demás nodos se interconectan a través de otra
+                topología (estrella, anillo).
+            </P>
+        </artitle>
+        <artitle>
+            <h3>Árbol</h3>
+            <img src="/img/arbol.jpg" alt="img_arbol">
+            <p>
+                la conexión en árbol es parecida a una serie de redes en estrella interconectadas salvo en que no tiene un nodo central.
+            </p>
+            <p>
+                En cambio, tiene un nodo de enlace troncal, generalmente ocupado por un hub o switch, desde el que se ramifican los demás nodos.
+            </p>
+        </artitle>
+        <artitle>
+            <h3>Bus</h3>
+            <img src="/img/bus.jpg" alt="img_bus">
+            <p>
+                Es un diseño simple que utiliza un solo cable al cual todas las estaciones se conectan.
+            </p>
+            <p>
+                La topología usa un medio de transmisión de amplia cobertura (broadcast medium), ya que todas las estaciones pueden recibir las transmisiones emitidas por cualquier estación.
+            </p>
+        </artitle>
+    </section>
+    <!-- <hr> -->
+    <!-- 3.4 -->
+    <a name="Subtema4"></a>
+    <section>
+        <h2>3.4 Tecnologías WAN: PPP, XDSL, frame relay, ISDN, ATM</h2>
+        <artitle>
+            <h3>Tecnología PPP</h3>
+            <img src="/img/ppp.jpg" alt="img_ppp">
+            <p>
+                Point-to-point Protocol (en español Protocolo punto a punto), también conocido por su acrónimo PPP, es un protocolo de nivel de enlace estandarizado en el documento RFC 1661.
+            </p>
+            <p>
+                Comúnmente usado para establecer una conexión directa entre dos nodos de red.Puede proveer autentificación de conexión, cifrado de transmisión (usando ECP, RFC 1968), y compresión.
+            </p>
+            <p>
+                PPP es usado en varios tipos de redes físicas incluyendo, cable serial, línea telefónica, line troncal, telefonía celular, especializado en enlace de radio y enlace de fibra óptica como SONET. PPP también es usado en las conexiones de acceso a internet(mercadeado
+                como “broadband”).
+            </p>
+            <p>
+                Dos derivados del PPP son: <br>
+                <ul>
+                    <li>Point to Point Protocolo over Ethernet (PPPoE)</li>
+                    <li>Point to Point Protocol over ATM (PPPoA)</li>
+                </ul>
+            </p>
+        </artitle>
+        <article>
+            <h3>Tecnología XDSL</h3>
+            <img src="/img/XDSL.jpg" alt="img_XDSL">
+            <p>
+                XDSL está formado por un conjunto de tecnologías que proveen un gran ancho de banda sobre circuitos locales de cable de cobre, sin amplificadores ni repetidores de señal a lo largo de la ruta del cableado, entre la conexión del cliente y el primer nodo
+                de la red.
+            </p>
+            <p>
+                Son unas tecnologías de acceso punto a punto a través de la red pública, que permiten un flujo de información tanto simétrica como asimétrica y de alta velocidad.
+            </p>
+            <p>
+                Las tecnologías XDSL convierten las líneas analógicas convencionales en digitales de alta velocidad, con las que es posible ofrecer servicios de banda ancha en el domicilio de los clientes, similares a los de las redes de cable o las inalámbricas, aprovechando
+                los pares de cobre existentes, siempre que estos reúnan un mínimo de requisitos en cuanto a la calidad del circuito y distancia.
+            </p>
+        </article>
+        <article>
+            <h3>Tecnología frame relay</h3>
+            <img src="/img/framerelay.jpg" alt="img_framerelay">
+            <p>
+                Frame Relay o (Frame-mode Bearer Service) es una técnica de comunicación mediante retransmisión de tramas para redes de circuito virtual, introducida por la ITU-T a partir de la recomendación I.122 de 1988.
+            </p>
+            <p>
+                Consiste en una forma simplificada de tecnología de conmutación de paquetes que transmite una variedad de tamaños de tramas o marcos (“frames”) para datos, perfecto para la transmisión de grandes cantidades de datos.
+            </p>
+            <p>
+                La técnica Frame Relay se utiliza para un servicio de transmisión de voz y datos a alta velocidad que permite la interconexión de redes de área local separadas geográficamente a un coste menor.
+            </p>
+        </article>
+        <article>
+            <h3>Tecnología ISDN</h3>
+            <img src="/img/ISDN.jpg" alt="img_ISDN">
+            <p>
+                Las siglas significan Integrated Service Digital Network, en español este servicio se ha denominado REDSI.
+            </p>
+            <p>
+                ISDN es una tecnología totalmente digital que permite el transporte de voz y de datos (textos, gráficas, videoconferencia, etc) todo transmitido desde una única interfaz de red.
+            </p>
+            <p>
+                Las ventajas más sobresalientes que tiene ISDN con respecto a las conexiones por modem conocidas por nosotros, son la velocidad y confiablidad de la conexión. Usando ISDN se pueden lograr conexiones a más de 64 kbps lo cual significa un aumento de más
+                del 50% sobre la velocidad de las conexiones típicas.
+            </p>
+        </article>
+        <article>
+            <h3>Tecnología ATM</h3>
+            <img src="/img/atm.jpg" alt="img_atm">
+            <p>
+                El Modo de Transferencia Asíncrona o Asynchronous Transfer Mode (ATM) es una tecnología de telecomunicación desarrollada para hacer frente a la gran demanda de capacidad de transmisión para servicios y aplicaciones.
+            </p>
+            <p>
+                Con esta tecnología, a fin de aprovechar al máximo la capacidad de los sistemas de transmisión, sean estos de cable o radioeléctricos, la información no es transmitida y conmutada a través de canalesasignados en permanencia, sino en forma de cortos paquetes
+                (celdas ATM) de longitud constante y que pueden ser enrutadas individualmente mediante el uso de los denominados canales virtuales ytrayectos virtuales.
+            </p>
+            <p>
+                Son estructuras de datos de 53 bytes compuestas por dos campos principales:
+            </p><br>
+            <ol>
+                <li>Header</li>
+                <p>
+                    sus 5 bytes tienen tres funciones principales: identificación del canal, información para la detección de errores y si la célula es o no utilizada. Eventualmente puede contener también corrección de errores y un número de secuencia.
+                </p>
+                <li>Payload</li>
+                <p>
+                    tiene 48 bytes fundamentalmente con datos del usuario y protocolos AAL que también son considerados como datos del usuario.
+                </p>
+            </ol>
+            <p>
+                Dos de los conceptos más significativos del ATM, Canales Virtuales y Rutas Virtuales, están materializados en dos identificadores en el header de cada célula (VCI y VPI) ambos determinan el enrutamiento entre nodos.
+            </p>
+            <p>
+                El estándar define el protocolo orientado a conexión que las transmite y dos tipos de formato de celda:
+            </p>
+            <ul>
+                <li>NNI</li>
+                <p>
+                    (Network to Network Interface o interfaz red a red) El cual se refiere a la conexión de Switches ATM en redes privadas.
+                </p>
+                <li>UNI</li>
+                <p>
+                    (User to Network Interface o interfaz usuario a red) este se refiere a la conexión de un Switch ATM de una empresa pública o privada con un terminal ATM de un usuario normal, siendo este último el más utilizado.
+                </p>
+            </ul>
+        </article>
+    </section>
+    <!-- <hr> -->
+    <!-- 3.5 -->
+    <a name="Subtema5"></a>
+    <section>
+        <h2>3.5 Configuración de dispositivos WAN</h2>
+        <img src="/img/dispositivosWAN.jpg" alt="img_tema_3.5">
+        <p>
+            Existen muchos tipos de dispositivos que son específicos de los entornos WAN, como lo siguientes;
+        </p>
+        <ul>
+            <li>Módem dial-up:</li>
+            <p>
+                Considerado una tecnología WAN antigua, un módem de banda de voz convierte (es decir, modula) las señales digitales producidas por una computadora en frecuencias de voz que se pueden transmitir a través de las líneas analógicas de la red de telefonía
+                pública. En el otro lado de la conexión, otro módem convierte nuevamente los sonidos en una señal digital (es decir, los demodula) como entrada para una computadora o una conexión de red.
+            </p>
+            <li>Servidor de acceso:</li>
+            <p>
+                Concentra las comunicaciones de entrada y de salida del módem dial-up de los usuarios. Considerado una tecnología antigua; un servidor de acceso puede tener una combinación de interfaces analógicas y digitales y admitir cientos de usuarios simultáneos.
+            </p>
+            <li>Módem de banda ancha:</li>
+            <p>
+                Un tipo de módem digital que se utiliza con servicio de Internet por DSL o por cable de alta velocidad. Ambos funcionan de manera similar al módem de banda de voz, pero usan mayores velocidades de transmisión y frecuencias de banda ancha.
+            </p>
+            <li>CSU/DSU:</li>
+            <p>
+                Las líneas arrendadas digitales requieren una CSU y una DSU. Una CSU/DSU puede ser un dispositivo separado, como un módem, o puede ser una interfaz en un router. La CSU proporciona terminación de la señal digital y asegura la integridad de la conexión
+                mediante la corrección de errores y el monitoreo de la línea. La DSU convierte las tramas de línea en tramas que la LAN puede interpretar y viceversa.
+            </p>
+            <li>Switch WAN:</li>
+            <p>
+                Un dispositivo de internetworking de varios puertos utilizado en las redes de los proveedores de servicios. Por lo general, estos dispositivos conmutan el tráfico, como Frame Relay o ATM, y operan en la capa 2.
+            </p>
+            <li>Router:</li>
+            <p>
+                Proporciona internetworking y puertos de interfaz de acceso WAN que se usan para conectarse a la red del proveedor de servicios. Estas interfaces pueden ser conexiones seriales, Ethernet u otras interfaces WAN. Con algunos tipos de interfaces WAN, se
+                requiere un dispositivo externo, como una DSU/CSU o un módem (analógico, por cable o DSL) para conectar el router al proveedor de servicios local.
+            </p>
+            <li>Router principal/switch multicapa:</li>
+            <p>
+                router o switch multicapa que reside en el centro o en el backbone de la WAN, en lugar de en la periferia. Para desempeñar esta función, un router o switch multicapa debe poder admitir varias interfaces de telecomunicaciones con la mayor velocidad usada
+                en el núcleo de la WAN. También debe poder reenviar paquetes IP a máxima velocidad en todas esas interfaces. El router o switch multicapa también debe admitir los protocolos de routing que se utilizan en el núcleo.
+            </p>
+        </ul>
+    </section>
+    <!-- <hr> -->
+    <!-- 3.6 -->
+    <a name="Subtema6"></a>
+    <section class="sectionfinal">
+        <h2>3.6 Niveles de seguridad en redes VPN</h2>
+        <img src="/img/vpn.jpg" alt="img_tema_3.6">
+        <p>
+            La VPN se basa en los protocolos de nivel 3 del Modelo OSI. Esta tecnología busca implementar redes de servicios privadas particionando redes públicas o compartidas de IP, donde la red pública IP más empleada es Internet.
+        </p>
+        <p>
+            Las redes privadas virtuales (VPNs) tienen gran importancia puesto que es una tecnología de red que ermite extenderse a la red local sobre una red pública o una red no controlada. Entre los aspectos fundamentales que toda VPN debe tener presente es: la
+            seguridad, integridad y confiabilidad de la informción además del valor agregado que representan al ser fáciles de usar.
+        </p>
+        <p>
+            Un Red Virtual Privada es aquella red privada construida sobre una red pública que conecta los componentes de una red con otra, mantenida y controlada por la organización a la que sirve.
+        </p>
+        <p>
+            Es necesario proveer a las VPN de mecanismos que aseguren la confiabilidad y la integridad de los datos transmitidos y también para evitar el acceso a la red privada.
+        </p>
+        <p>
+            La seguridad de una VPN debe ir más allá que simplemente controlar el acceso seguro a los recursos de una red, también debe proveer mecanismos para la implementación de pólizas de seguridad que garantice el desarrollo exitoso de una VPN. La mejor opción
+            es establecer antes de que se establezca la conexión cifrada con una oficina o LAN remota, unos niveles de seguridad que deben cumplirse. La comprobación de los niveles de seguridad en el equipo remoto que desea conectarse a la red corporativa
+            debe ser la más amplia posible.
+        </p>
+        <p>
+            Sin duda es necesario establecer un sistema de chequeo del estatus de seguridad de los equipos remotos conectados mediante una VPN a la red corporativa y el chequeo debe ser percibido por el usuario remoto como una ayuda a la seguridad general, no como
+            una imposición corporativa y además, debe hacerse con suficiente amplitud como para abarcar productos y sistemas de seguridad no corporativos, sino elegidos por el teletrabajo en un ámbito doméstico. La autenticación de usuarios y la encriptación
+            de datos son características de seguridad muy fuertes. Y en una VPN la tecnología que podrá ofrecer mejor seguridad será IPSec.
+        </p>
+        <p>
+            IPsec es una colección de múltiples protocolos relacionados. Es usado como una solución completa de protocolo VPN.
+        </p>
+        <p>
+            IPsec es un protocolo de túnel de nivel 3. Válido para IPv4 como IPv6, permite definir los protocolos de seguridad, los algoritmos criptográficos y las claves manejadas entre los sistemas que se comunican.
+        </p>
+        <p>
+            IPSec soporta la transferencia protegida de información a través de una interred IP, y define el formato del paquete para un IP sobre un modo de túnel IP, generalmente llamado como Modo de túnel IPSec. Un túnel IPSec consiste en un cliente del túnel y
+            servidor del túnel, ambos configurados para usar los túneles IPSec y un mecanismo de encriptación negociado.
+        </p>
+        <p>
+            El Modo de Túnel IPSec soporta solamente trafico IP, funciona al fondo de la pila IP. Es controlado por una política de seguridad que establece los mecanismos de encriptación y del túnel disponible en orden preferencial así como los métodos de autenticación
+            disponibles.
+        </p>
+        <p>
+            Una de las características más importantes de IPSec es su compatibilidad con las redes IP actuales. IPSec puede dividirse básicamente en mecanismos de gestión de claves, mecanismo de creación de asociaciones seguras y algoritmos criptográficos para autenticación
+            y cifrado.
+        </p>
+    </section>
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h1 class="modal-title" id="myModalLabel">Extras</h1>
+                </div>
+                <div class="modal-body">
+                    <section>
+                        <!-- video1 -->
+                        <h3>3.1 Introducción a redes WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/y4zu2FnW6pc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video2 -->
+                        <h3>3.2 Enlaces</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/vWxzs6nqSwI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video3 -->
+                        <h3>3.3 Topologías WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/Y2L_7ewQteI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video4 -->
+                        <h3>3.4 Tecnologías WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/D_jKvsmTECc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video5 -->
+                        <h3>3.5 Configuración de dispositivos WAN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/mt-WILrtasc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <!-- video6 -->
+                        <h3>3.6 Niveles de seguridad en redes VPN</h3>
+                        <iframe class="video" src="https://www.youtube.com/embed/IzxC6UPilqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+<footer>
+    <div class="yo">
+        <a href="https://www.facebook.com/kevin.manuel.3760" target="_blank"><img src="img/yo.jpg" alt=""></a>
+        <p>KEVIN MANUEL VICTORIA RODRIGUEZ -- 2021 &copy;</p>
+        <p>Instituto Tecnologíco de Cuautla</p>
+        <p>Ing.Sistemas Computacionales</p>
+        <p>desarrollador web</p>
+    </div>
+</footer>
+
+</html>
